@@ -1,0 +1,11 @@
+Flight Price Prediction Model Results
+------------------------------------
+Model Type : RandomForestRegressor
+Dataset    : data/processed/flights_processed.csv
+Records    : 271888
+Features   : from, to, flightType, time, distance, agency, month, day
+Target     : price
+
+MAE        : 0.05
+RMSE       : 0.59
+R2 Score   : 1.0000

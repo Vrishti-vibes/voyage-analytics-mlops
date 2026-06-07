@@ -1,0 +1,31 @@
+Gender Classification Model Results
+-----------------------------------
+Model Type : RandomForestClassifier
+Dataset    : data/processed/users_processed.csv
+Records    : 1340
+Features   : company, age
+Target     : gender
+
+Accuracy   : 0.3433
+Precision  : 0.3385
+Recall     : 0.3433
+F1 Score   : 0.3381
+
+Classes:
+female, male, none
+
+Confusion Matrix:
+[[39 24 27]
+ [29 20 41]
+ [32 23 33]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.39      0.43      0.41        90
+        male       0.30      0.22      0.25        90
+        none       0.33      0.38      0.35        88
+
+    accuracy                           0.34       268
+   macro avg       0.34      0.34      0.34       268
+weighted avg       0.34      0.34      0.34       268
