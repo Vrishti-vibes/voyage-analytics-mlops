@@ -82,7 +82,7 @@ The dashboard provides:
 
 ## FastAPI Swagger Documentation
 
-![Swagger](report/Screenshots/03_fastapi_swagger.png)
+![Swagger](report/Screenshots/fastapi_swagger.png)
 
 Interactive API documentation generated using FastAPI and Swagger UI.
 
