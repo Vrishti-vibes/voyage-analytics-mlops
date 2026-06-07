@@ -1,157 +1,202 @@
 # ✈️ Voyage Analytics
 
-## AI Travel Intelligence Platform with MLOps
+## AI-Powered Travel Intelligence Platform with End-to-End MLOps
 
-Voyage Analytics is a production-oriented Machine Learning and MLOps platform designed for travel intelligence. The platform provides flight price prediction, hotel recommendation, travel analytics, experiment tracking, model registry, API serving, and Dockerized deployment.
+Voyage Analytics is a production-oriented Machine Learning and MLOps platform developed to demonstrate the complete lifecycle of modern AI applications. The platform combines predictive analytics, recommendation systems, experiment tracking, model management, API serving, interactive visualization, and containerized deployment within a unified ecosystem.
 
----
-
-# Project Overview
-
-The objective of this project is to demonstrate an end-to-end Machine Learning lifecycle including:
-
-- Data preprocessing
-- Feature engineering
-- Model training
-- Experiment tracking
-- Model registry
-- API deployment
-- Interactive dashboard
-- Containerization using Docker
+Designed as an end-to-end solution, the project showcases industry-standard MLOps practices including model versioning, experiment reproducibility, deployment automation, and scalable service orchestration.
 
 ---
 
-# Features
+## Project Highlights
 
-## Flight Price Prediction
-
-Predicts flight prices based on:
-
-- Source city
-- Destination city
-- Flight type
-- Distance
-- Airline
-- Month
-- Day
+* Flight Price Prediction using Machine Learning
+* Hotel Recommendation Engine
+* Travel Analytics Dashboard
+* FastAPI-Based Model Serving
+* MLflow Experiment Tracking
+* Model Registry & Version Management
+* Dockerized Multi-Service Deployment
+* Streamlit Interactive Dashboard
+* Production-Oriented MLOps Workflow
 
 ---
 
-## Hotel Recommendation System
+## Business Problem
 
-Provides hotel recommendations based on:
+Travel pricing and accommodation decisions are influenced by multiple dynamic factors including destination, airline, travel dates, distance, and customer preferences. Traditional static systems often fail to provide personalized insights and predictive capabilities.
 
-- User preferences
-- Ratings
-- Price factors
-- Travel requirements
+Voyage Analytics addresses this challenge by integrating predictive modeling, recommendation systems, and real-time analytics into a centralized travel intelligence platform.
 
 ---
 
-## Travel Analytics Dashboard
+## Core Modules
 
-Interactive analytics dashboard built using Streamlit.
+### Flight Price Prediction
 
-Includes:
+A supervised Machine Learning model developed to estimate airfare based on travel attributes such as:
 
-- Dataset insights
-- KPIs
-- Model outputs
-- Business analytics
+* Origin City
+* Destination City
+* Airline
+* Flight Type
+* Travel Distance
+* Travel Month
+* Travel Day
 
----
-
-## MLflow Integration
-
-Implemented:
-
-- Experiment Tracking
-- Metrics Logging
-- Artifact Storage
-- Model Registry
-- Model Versioning
+The model enables data-driven travel planning and pricing insights.
 
 ---
 
-## FastAPI Backend
+### Hotel Recommendation Engine
 
-REST API endpoints available for:
+A recommendation system designed to assist travelers in identifying suitable accommodations based on:
 
-- Flight prediction
-- Hotel recommendation
-- Gender prediction
-- Health checks
+* User Preferences
+* Hotel Ratings
+* Pricing Factors
+* Travel Requirements
+* Personalized Recommendation Logic
+
+---
+
+### Travel Analytics Dashboard
+
+An interactive Streamlit dashboard provides:
+
+* Travel Data Insights
+* KPI Monitoring
+* Prediction Outputs
+* Recommendation Results
+* Business Intelligence Visualizations
+* Operational Analytics
+
+---
+
+### FastAPI Inference Layer
+
+Production-ready REST APIs have been implemented using FastAPI for real-time model inference.
+
+Available endpoints include:
+
+* Flight Price Prediction
+* Hotel Recommendation
+* Gender Classification
+* Health Monitoring
 
 Swagger Documentation:
 
-```
+```text
 http://localhost:8000/docs
 ```
 
 ---
 
-## Dockerized Deployment
+### MLflow MLOps Integration
 
-Services deployed using Docker Compose:
+The platform incorporates MLflow to manage the Machine Learning lifecycle.
 
-- FastAPI Container
-- Streamlit Container
-- MLflow Container
+Implemented Components:
+
+* Experiment Tracking
+* Parameter Logging
+* Metric Monitoring
+* Artifact Management
+* Model Registry
+* Model Version Control
+
+This ensures reproducibility and governance throughout the model lifecycle.
 
 ---
 
-# System Architecture
+### Dockerized Deployment
 
-The architecture diagram is available in:
+The complete platform is containerized using Docker and orchestrated through Docker Compose.
 
-```
+Services include:
+
+* FastAPI Backend Container
+* Streamlit Dashboard Container
+* MLflow Tracking Server Container
+
+Benefits:
+
+* Reproducible Environments
+* Simplified Deployment
+* Environment Isolation
+* Scalability Readiness
+
+---
+
+## System Architecture
+
+Architecture Diagram:
+
+```text
 report/screenshots/06_architecture_diagram.png
 ```
 
----
+The architecture follows a modular MLOps design pattern consisting of:
 
-# Tech Stack
-
-## Programming Language
-
-- Python 3.12
-
-## Machine Learning
-
-- Scikit-Learn
-- Pandas
-- NumPy
-
-## Backend
-
-- FastAPI
-- Uvicorn
-
-## Frontend
-
-- Streamlit
-
-## MLOps
-
-- MLflow
-
-## Deployment
-
-- Docker
-- Docker Compose
+1. Data Layer
+2. Data Processing Layer
+3. Machine Learning Layer
+4. Model Management Layer
+5. API Serving Layer
+6. Visualization Layer
+7. Containerization Layer
 
 ---
 
-# Project Structure
+## Technology Stack
+
+### Programming Language
+
+* Python 3.12
+
+### Data Science & Machine Learning
+
+* Pandas
+* NumPy
+* Scikit-Learn
+
+### Backend Development
+
+* FastAPI
+* Uvicorn
+
+### Frontend & Visualization
+
+* Streamlit
+
+### MLOps
+
+* MLflow
+
+### Containerization
+
+* Docker
+* Docker Compose
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+## Project Structure
 
 ```text
-MAJOR PROJECT
+voyage-analytics-mlops
 │
+├── app/
 ├── dashboard/
 ├── data/
 │   ├── raw/
 │   └── processed/
 │
+├── k8s/
 ├── models/
 ├── notebooks/
 ├── report/
@@ -168,30 +213,28 @@ MAJOR PROJECT
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-# Running the Project
+## Local Setup
 
-## Clone Repository
+### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Vrishti-vibes/voyage-analytics-mlops.git
+cd voyage-analytics-mlops
 ```
 
----
-
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Run Docker Deployment
+### Run Using Docker
 
 ```bash
 docker compose up --build
@@ -199,33 +242,27 @@ docker compose up --build
 
 ---
 
-# Available Services
+## Available Services
 
-## Streamlit Dashboard
+### Streamlit Dashboard
 
 ```text
 http://localhost:8501
 ```
 
----
-
-## FastAPI
+### FastAPI Application
 
 ```text
 http://localhost:8000
 ```
 
----
-
-## FastAPI Swagger
+### FastAPI Swagger UI
 
 ```text
 http://localhost:8000/docs
 ```
 
----
-
-## MLflow
+### MLflow Tracking Server
 
 ```text
 http://localhost:5000
@@ -233,34 +270,48 @@ http://localhost:5000
 
 ---
 
-# Results
+## Achievements
 
 Successfully implemented:
 
-- Flight Price Prediction Model
-- Gender Classification Model
-- Hotel Recommendation Engine
-- MLflow Experiment Tracking
-- Model Registry
-- FastAPI Deployment
-- Streamlit Dashboard
-- Dockerized Deployment
+* End-to-End Machine Learning Pipeline
+* Flight Price Prediction Model
+* Gender Classification Model
+* Hotel Recommendation Engine
+* MLflow Experiment Tracking
+* Model Registry Integration
+* FastAPI Deployment
+* Streamlit Analytics Dashboard
+* Dockerized Multi-Service Architecture
+* Git-Based Version Control Workflow
 
 ---
 
-# Future Scope
+## Future Enhancements
 
-- Real-time flight data integration
-- Cloud deployment on AWS
-- Kubernetes orchestration
-- CI/CD automation
-- Recommendation engine enhancement
-- Advanced forecasting models
+* Real-Time Flight Data Integration
+* Cloud Deployment on AWS
+* Kubernetes Orchestration
+* CI/CD Pipeline Automation
+* Advanced Recommendation Algorithms
+* Automated Model Retraining
+* Monitoring & Alerting Framework
+* Distributed MLOps Infrastructure
 
 ---
 
-# Conclusion
+## Conclusion
 
-Voyage Analytics demonstrates a complete end-to-end Machine Learning and MLOps workflow, covering data preprocessing, model training, experiment tracking, model registry, API deployment, dashboard visualization, and Dockerized deployment.
+Voyage Analytics demonstrates a complete production-oriented Machine Learning and MLOps ecosystem that integrates data processing, predictive modeling, experiment management, API deployment, interactive analytics, and containerized infrastructure.
 
-The project showcases production-oriented Machine Learning practices suitable for academic major projects and MLOps portfolio demonstrations.
+The project reflects modern software engineering and MLOps practices while serving as a scalable foundation for intelligent travel analytics applications.
+
+---
+
+## Author
+
+**Kumari Vrishti**
+
+B.Tech Computer Science Engineering
+
+Machine Learning | MLOps | Backend Development | Data Analytics
