@@ -45,7 +45,7 @@ The platform follows a modular MLOps architecture consisting of:
 
 ### Architecture Diagram
 
-![Architecture](report/Screenshots/architecture_diagram.png.png)
+![Architecture](report/Screenshots/architecture_diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ MLflow is used for:
 
 ## Streamlit Analytics Dashboard
 
-![Dashboard](report/Screenshots/02_streamlit_dashboard.png)
+![Dashboard](report/Screenshots/dashboard_home.png)
 
 The dashboard provides:
 
@@ -90,7 +90,7 @@ Interactive API documentation generated using FastAPI and Swagger UI.
 
 ## Dockerized Deployment
 
-![Docker](report/Screenshots/04_docker_containers.png)
+![Docker](report/Screenshots/docker_containers.png)
 
 Multi-container deployment using Docker Compose including:
 
